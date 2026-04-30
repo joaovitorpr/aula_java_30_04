@@ -21,8 +21,8 @@ public class MainPagamento {
                         nome = JOptionPane.showInputDialog("Informe nome do funcionario: ");
                         aux = JOptionPane.showInputDialog("Digite as horas trabalhadas: ");
                         valorhoratrabalho = Float.parseFloat(aux);
-                        Funcionario func = new Funcionario(nome, valorhoratrabalho);
-                        calculo = func.calcularSalario();
+                        Funcionario func = new Funcionario(nome, valorhoratrabalho); //Realizando a identação da classe e passagem dos parâmetros
+                        calculo = func.calcularSalario(); //Armazenamento do calculo do salário dentro da variável calculo
                         JOptionPane.showMessageDialog(null, String.format("Nome: %s\nSalário atual: %.2f", func.getNome(), calculo));
                         break;
                     case 2:
@@ -31,8 +31,8 @@ public class MainPagamento {
                         valorhoratrabalho = Float.parseFloat(aux);
                         aux = JOptionPane.showInputDialog("Informe o adicional noturno");
                         adicionalnoturno = Float.parseFloat(aux);
-                        VigiaNoturno hurhurhurhur = new VigiaNoturno(nome, valorhoratrabalho, adicionalnoturno);
-                        calculo = hurhurhurhur.calcularSalario();
+                        VigiaNoturno hurhurhurhur = new VigiaNoturno(nome, valorhoratrabalho, adicionalnoturno); //Realizando a identação da classe e passagem dos parâmetros
+                        calculo = hurhurhurhur.calcularSalario(); //Armazenamento do calculo do salário dentro da variável calculo
                         JOptionPane.showMessageDialog(null, String.format("Nome: %s\nSalário atual: %.2f",hurhurhurhur.getNome(), calculo));
                         break;
                     case 3:
@@ -41,8 +41,8 @@ public class MainPagamento {
                         valorhoratrabalho = Float.parseFloat(aux);
                         aux = JOptionPane.showInputDialog("Informe o valor de comissão: ");
                         comissao = Float.parseFloat(aux);
-                        Vendedor vende = new Vendedor(nome, valorhoratrabalho, comissao);
-                        calculo = vende.calcularSalario();
+                        Vendedor vende = new Vendedor(nome, valorhoratrabalho, comissao); //Realizando a identação da classe e passagem dos parâmetros
+                        calculo = vende.calcularSalario(); //Armazenamento do calculo do salário dentro da variável calculo
                         JOptionPane.showMessageDialog(null, String.format("Nome: %s\nSalário atual: %.2f", vende.getNome(), calculo));
                         break;
                     default:
