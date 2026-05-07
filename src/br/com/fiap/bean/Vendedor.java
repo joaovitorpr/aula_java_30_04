@@ -22,5 +22,6 @@ public class Vendedor extends Funcionario{
     //Criando metodo
     public float calcularSalario(){
         return (((getValorHoraTrabalho() * 40) * 4) * (1 + comissao/100));
+        //Ou pode fazer igual isso: return super.calcularSalario() * (1 + comissao / 100);
     }
 }
