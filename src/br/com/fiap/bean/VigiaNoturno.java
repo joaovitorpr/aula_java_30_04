@@ -22,5 +22,6 @@ public class VigiaNoturno extends Funcionario{
     //Criando metodo
     public float calcularSalario() {
         return ((getValorHoraTrabalho() * 40) * 4 + adicionalNoturno);
+        // ou pode fazer super.calcularSalario() + adicionalNoturno;
     }
 }
